@@ -102,6 +102,8 @@ Render_Position = "center"; //[default,center,zero]
 cutx = 0; //0.1
 //Slice along the y axis
 cuty = 0; //0.1
+//Slice along the z axis
+cutz = 0; //0.1
 // enable loging of help messages during render.
 enable_help = false;
 
@@ -267,7 +269,7 @@ else
     render_position = Render_Position,
     pitch = pitch,
     help = enable_help,
-    cut = [cutx, cuty, 2])
+    cut = [cutx, cuty, cutz])
     gridfinity_baseplate(
       num_x = plate[1].x[iPlate_size],//calcDimensionWidth(Width),
       num_y = plate[1].y[iPlate_size],//calcDimensionWidth(Depth),
